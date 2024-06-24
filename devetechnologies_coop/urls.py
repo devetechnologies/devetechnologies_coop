@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+admin.site.site_header = "Cooperativa Unidos Podemos"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
