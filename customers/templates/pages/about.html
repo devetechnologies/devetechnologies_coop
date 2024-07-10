@@ -8,40 +8,42 @@
         <meta name="keywords" content="agency, bootstrap, business, corporate, creative, landing page, marketing, multipurpose, product, product launch, responsive, software, startup, startup landing page" />
         <meta name="author" content="ThemesBoss" />
 
+
         <!-- Site Title -->
-       <!-- Site favicon -->
-       <link rel="shortcut icon" href="{% static 'images/favicon.ico'%}">
+        <title>Cooperativa</title>
 
-       <!-- Bootstrap core CSS -->
-       <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" type="text/css">
+        <!-- Site favicon -->
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico'%}">
 
-       <!-- MFP Css -->
-       <link rel="stylesheet" href="{%static 'css/magnific-popup.css'%}">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" type="text/css">
 
-       <!-- Material Icon -->
-       <link rel="stylesheet" type="text/css" href="{% static 'css/materialdesignicons.min.css'%}" />
+        <!-- MFP Css -->
+        <link rel="stylesheet" href="{%static 'css/magnific-popup.css'%}">
 
-       <!-- Pe7 Icon -->
-       <link rel="stylesheet" type="text/css" href="{% static 'css/pe-icon-7.css'%}">
+        <!-- Material Icon -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/materialdesignicons.min.css'%}" />
 
-       <!-- Owl Slider -->
-       <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}" />
-       <link rel="stylesheet" href="{%static 'css/owl.theme.css'%}" />
-       <link rel="stylesheet" href="{%static 'css/owl.transitions.css'%}" />
+        <!-- Pe7 Icon -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/pe-icon-7.css'%}">
 
-       <!-- Custom  Css -->
-       <link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}" />
+        <!-- Owl Slider -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}" />
+        <link rel="stylesheet" href="{%static 'css/owl.theme.css'%}" />
+        <link rel="stylesheet" href="{%static 'css/owl.transitions.css'%}" />
+
+        <!-- Custom  Css -->
+        <link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}" />
 
     </head>    
     <body>
-
-        <!--Navbar Start-->
-        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+          <!--Navbar Start-->
+          <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
             <div class="container">
                 <!-- LOGO -->
-                <a class="logo navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="" class="img-fluid logo-light"> 
-                    <img src="images/logo-dark.png" alt="" class="img-fluid logo-dark">
+                <a class="logo navbar-brand" href="{%url 'home'%}">
+                   <!-- <img src="{% static 'images/logo.png'%}" alt="" class="img-fluid logo-light"> 
+                    <img src="{%static 'images/logo-dark.png'%}" alt="" class="img-fluid logo-dark">-->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="mdi mdi-menu"></i>
@@ -49,25 +51,20 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
                         <li class="nav-item">
-                            <a href="index_1.html" class="nav-link">Home</a>
+                            <a href="{%url 'home'%}" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="about.html" class="nav-link">About Us</a>
+                            <a href="{%url 'aboutUs'%}" class="nav-link">Acerca de nosotros</a>
+                        </li>
+                     
+                        <li class="nav-item">
+                            <a href="{%url 'services'%}" class="nav-link">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a href="team.html" class="nav-link">Team</a>
+                            <a href="{%url 'contact'%}" class="nav-link">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a href="services.html" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="project.html" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="blog.html" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact</a>
+                            <a href="http://localhost:8000/admin/" target="_blank" class="nav-link">Administracion</a>
                         </li>
                     </ul>
                     <div>
@@ -89,10 +86,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-white text-center">
-                            <h2 class="font-weight-bold fonts-italic font-italic">About Us</h2>
+                            <h2 class="font-weight-bold fonts-italic font-italic">Acerca de Nosotros</h2>
                             <div class="home_divider mt-3 mb-3 mx-auto"></div>
                             <div class="page_link text-uppercase"> 
-                                <a href="index.html" class="d-inline-block mr-1">Home</a> / <span class="text-white ml-1">About Us</span> 
+                                <span class="text-white ml-1">COOP-UNIDOS PODEMOS constituye un motor significativo para el impulso de la mejoría de la calidad de vida de un segmento trascendente de nuestro mercado meta; en donde con el trabajo solidario cerramos la brecha de la exclusión social mitigando con la autogestión la pobreza y construyendo riqueza con la inclusión social y económica que genera la capacidad productiva e innovadora del asociado.</span> 
                             </div>
                         </div>
                     </div>
@@ -100,60 +97,59 @@
             </div>
         </section>
         <!--End Header-->
-
-        <!-- Start About -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="about_box text-center p-3 mt-3">
-                            <div class="about_icon text-custom">
-                                <i class="mdi mdi-apple-keyboard-command"></i>
+              <!-- Start About -->
+              <section class="section">
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+                            <div class="about_box text-center p-3 mt-3">
+                                <div class="about_icon text-custom">
+                                    <i class="mdi mdi-apple-keyboard-command"></i>
+                                </div>
+                                <div class="mt-3 about_detail">
+                                    <h5 class="font-weight-bold">Planes de Ahorros</h5>
+                                    <p class="text-muted mt-3">Brindamos asesoria para crearles un plan de ahorro garantizando un presente y un futuro mejor para usted y sus familiares.</p>
+                                    <a href="#" class="text-dark text-uppercase font-weight-bold read_more">Read More <i class="mdi mdi-arrow-right ml-2"></i></a>
+                                </div>
                             </div>
-                            <div class="mt-3 about_detail">
-                                <h5 class="font-weight-bold">Creative Design</h5>
-                                <p class="text-muted mt-3">Their separate existence is a myth. For science, music, sport, etc, Europe uses the same their pronunciation.</p>
-                                <a href="#" class="text-dark text-uppercase font-weight-bold read_more">Read More <i class="mdi mdi-arrow-right ml-2"></i></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="about_box text-center p-3 mt-3">
+                                <div class="about_icon text-custom">
+                                    <i class="mdi mdi-asterisk"></i>
+                                </div>
+                                <div class="mt-3 about_detail">
+                                    <h5 class="font-weight-bold">Prestamos</h5>
+                                    <p class="text-muted mt-3">Brindamos prestamos competitivos para nuestros socios .</p>
+                                    <a href="#" class="text-dark text-uppercase font-weight-bold read_more">Read More <i class="mdi mdi-arrow-right ml-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="about_box text-center p-3 mt-3">
+                                <div class="about_icon text-custom">
+                                    <i class="mdi mdi-biohazard"></i>
+                                </div>
+                                <div class="mt-3 about_detail">
+                                    <h5 class="font-weight-bold">Accesos</h5>
+                                    <p class="text-muted mt-3">Brindamos acceso rapido y sencillos a nuestros planes de ahorros y prestamos a nuestros clientesfho.</p>
+                                    <a href="#" class="text-dark text-uppercase font-weight-bold read_more">Read More <i class="mdi mdi-arrow-right ml-2"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="about_box text-center p-3 mt-3">
-                            <div class="about_icon text-custom">
-                                <i class="mdi mdi-asterisk"></i>
-                            </div>
-                            <div class="mt-3 about_detail">
-                                <h5 class="font-weight-bold">SEO & Marketing</h5>
-                                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. ullamcorper.</p>
-                                <a href="#" class="text-dark text-uppercase font-weight-bold read_more">Read More <i class="mdi mdi-arrow-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="about_box text-center p-3 mt-3">
-                            <div class="about_icon text-custom">
-                                <i class="mdi mdi-biohazard"></i>
-                            </div>
-                            <div class="mt-3 about_detail">
-                                <h5 class="font-weight-bold">Easy To Use & Edit</h5>
-                                <p class="text-muted mt-3">The European languages are members of the same family. Their separate existence is a myth. For music, sport, etc.</p>
-                                <a href="#" class="text-dark text-uppercase font-weight-bold read_more">Read More <i class="mdi mdi-arrow-right ml-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-        </section>
+                </div>            
+            </section>
         <!-- End About -->
 
-        <!-- Start Services -->
+        <!-- Start Services 
         <section>
             <div class="container-fluid">
                 <div class="row position-relative">
                     <div class="col-lg-6 services_img_bg">
                         &nbsp;
                     </div>
-                    <!-- end col -->
+                    end col 
                     <div class="col-lg-7 offset-lg-5 services_clip bg-gradient text-white">
                         <div class="services_bg_pad">
                             <div class="row justify-content-center">
@@ -208,10 +204,10 @@
                     </div> 
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- End Services -->
 
-        <!-- Start Features -->
+        <!-- Start Features 
         <section class="section bg-light">
             <div class="container">
                 <div class="row vertical-content">
@@ -258,10 +254,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- End Features -->
 
-        <!-- Start Team -->
+        <!-- Start Team 
         <section class="section">
             <div class="container">
                 <div class="row">
@@ -411,10 +407,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- End Team -->
 
-        <!-- Start Cta -->
+        <!-- Start Cta 
         <section class="section bg-gradient">
             <div class="container">
                 <div class="row">
@@ -429,35 +425,37 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- End Cta -->
 
         <!-- Start Footer -->
+        <br>
         <footer class="pt-5 footer_detail">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <h6 class="mt-3 text-white font-weight-normal">Craton</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Contactanos</h6>
                         <div class="footer_title_border"></div>
                         <div class="mt-4">
-                            <p>Their separate existence is a myth. For science, music, sport, etc, their pronunciation.</p>
-                            <p><i class="pe-7s-call mr-2"></i> +985 123 7856</p>
-                            <p><i class="pe-7s-mail-open mr-2"></i> exmaple@gmail.com</p>
-                            <p><i class="pe-7s-map-marker mr-2"></i> 202, Grasselli Street , Conway.</p>
+                            <p>Nuestros Datos</p>
+                            <p><i class="pe-7s-id"></i> RNC: 4-30-38208-6</p>
+                            <p><i class="pe-7s-call mr-2"></i> 809-748-5652</p>
+                            <p><i class="pe-7s-mail-open mr-2"></i> unidospodemos@gmail.com</p>
+                            <p><i class="pe-7s-map-marker mr-2"></i> Calle Duarte #2 KM 18 Villa Mella Republica Dominicana..</p>
                         </div>
                     </div>
                     <div class="col-lg-2">
-                        <h6 class="mt-3 text-white font-weight-normal">Our Pages</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Paginas</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Client</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                            <li><a href="#">Servicios</a></li>
                             <li><a href="#">Contact</a></li>
+                            <li><a href="#">Administracion</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                   <!-- <div class="col-lg-2">
                         <h6 class="mt-3 text-white font-weight-normal">Help Center</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
@@ -465,9 +463,9 @@
                             <li><a href="#">Billing</a></li>
                             <li><a href="#">General Question</a></li>
                         </ul>
-                    </div>
+                    </div>-->
                     <div class="col-lg-2">
-                        <h6 class="mt-3 text-white font-weight-normal">Follow Us</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Siguenos</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
                             <li><a href="#">Facebook</a></li>
@@ -477,14 +475,14 @@
                         </ul>
                     </div>
                     <div class="col-lg-2">
-                        <h6 class="mt-3 text-white font-weight-normal">Locations</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Ubicación</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
-                            <li><a href="#">Melbourne</a></li>
-                            <li><a href="#">London</a></li>
+                            <li><a href="#">Villa Mella Republica Dominicana</a></li>
+                           <!-- <li><a href="#">London</a></li>
                             <li><a href="#">New York</a></li>
                             <li><a href="#">San Francisco</a></li>
-                            <li><a href="#">Ontario</a></li>
+                            <li><a href="#">Ontario</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -493,7 +491,7 @@
                     <div class="col-lg-12">
                         <div class="clearfix">
                             <div class="float-left float_none">
-                                <p class="copy-rights mb-0">&copy; 2018 Craton - Crafted with <i class="mdi mdi-heart text-custom"></i> by ThemesBoss.</p>
+                                <p class="copy-rights mb-0">&copy; 2024 Cooperativa Unidos Podemos<i class="text-custom"></i></p>
                             </div>
                             <div class="float-right float_none">
                                 <ul class="list-inline fot_social mb-0">
