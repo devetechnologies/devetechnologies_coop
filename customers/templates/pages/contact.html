@@ -61,9 +61,6 @@
                             <a href="{%url 'contact'%}" class="nav-link">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{%url 'contact'%}" class="nav-link">Contacto</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="http://localhost:8000/admin/" target="_blank" class="nav-link">Administracion</a>
                         </li>
                     </ul>
@@ -86,10 +83,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-white text-center">
-                            <h2 class="font-weight-bold fonts-italic font-italic">Contact Us</h2>
+                            <h2 class="font-weight-bold fonts-italic font-italic">Contactos</h2>
                             <div class="home_divider mt-3 mb-3 mx-auto"></div>
                             <div class="page_link text-uppercase"> 
-                                <a href="index.html" class="d-inline-block mr-1">Home</a> / <span class="text-white ml-1">Contact</span> 
+                                <a href="{%url 'home'%}" class="d-inline-block mr-1">Inicio</a> / <span class="text-white ml-1">Contacto</span> 
                             </div>
                         </div>
                     </div>
@@ -109,9 +106,9 @@
                                     <i class="pe-7s-phone"></i>
                                 </div>
                                 <div class="contact-detail mt-3">
-                                    <h6>Call Us On</h6>
-                                    <p class="text-muted mb-0 mt-3">+985 123 7856</p>
-                                    <p class="text-muted mb-2">+123 123 7856</p>
+                                    <h6>Telefono</h6>
+                                    <p class="text-muted mb-0 mt-3">809-748-5652</p>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -123,9 +120,8 @@
                                     <i class="pe-7s-mail"></i>
                                 </div>
                                 <div class="contact-detail mt-3">
-                                    <h6>Email Us At</h6>
-                                    <p class="text-muted mb-0 mt-3">Website.Dhrums@gmail.com</p>
-                                    <p class="text-muted mb-2">support@dhrums.com</p>
+                                    <h6>Correo</h6>
+                                    <p class="text-muted mb-0 mt-3">coopetativaunidospodemos@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -137,17 +133,18 @@
                                     <i class="pe-7s-map-marker"></i>
                                 </div>
                                 <div class="contact-detail mt-3">
-                                    <h6>Visit Office</h6>
-                                    <p class="text-muted">4303 Ingram Street Dayton,<br> OH 45402</p>
+                                    <h6>Nuestra Oficina</h6>
+                                    <p class="text-muted">Calle Duarte #2 KM 18 Villa Mella,<br> Republica Dominicana</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="row mt-3 vertical-content">
                     <div class="col-lg-6">
                         <div class="mt-3">
-                            <img src="images/contact.png" alt="" class="img-fluid mx-auto d-block">
+                            <img src="{%static 'images/contact.png'%}" alt="" class="img-fluid mx-auto d-block">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -186,11 +183,11 @@
                         </div> 
                     </div>
                 </div>
-            </div>
+            </div>-->
         </section>
         <!-- End Contact -->
 
-        <!-- Start Funfacts -->
+        <!-- Start Funfacts 
         <section class="section bg-gradient">
             <div class="container">
                 <div class="row">
@@ -216,7 +213,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- End Funfacts -->
 
         <!-- Start Footer -->
@@ -224,27 +221,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <h6 class="mt-3 text-white font-weight-normal">Craton</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Contactanos</h6>
                         <div class="footer_title_border"></div>
                         <div class="mt-4">
-                            <p>Their separate existence is a myth. For science, music, sport, etc, their pronunciation.</p>
-                            <p><i class="pe-7s-call mr-2"></i> +985 123 7856</p>
-                            <p><i class="pe-7s-mail-open mr-2"></i> exmaple@gmail.com</p>
-                            <p><i class="pe-7s-map-marker mr-2"></i> 202, Grasselli Street , Conway.</p>
+                            <p>Nuestros Datos</p>
+                            <p><i class="pe-7s-id"></i> RNC: 4-30-38208-6</p>
+                            <p><i class="pe-7s-call mr-2"></i> 809-748-5652</p>
+                            <p><i class="pe-7s-mail-open mr-2"></i> unidospodemos@gmail.com</p>
+                            <p><i class="pe-7s-map-marker mr-2"></i> Calle Duarte #2 KM 18 Villa Mella Republica Dominicana..</p>
                         </div>
                     </div>
                     <div class="col-lg-2">
-                        <h6 class="mt-3 text-white font-weight-normal">Our Pages</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Paginas</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Client</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Acerca de nosotros</a></li>
+                            <li><a href="#">Servicios</a></li>
                             <li><a href="#">Contact</a></li>
+                            <li><a href="#">Administracion</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                   <!-- <div class="col-lg-2">
                         <h6 class="mt-3 text-white font-weight-normal">Help Center</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
@@ -252,9 +250,9 @@
                             <li><a href="#">Billing</a></li>
                             <li><a href="#">General Question</a></li>
                         </ul>
-                    </div>
+                    </div>-->
                     <div class="col-lg-2">
-                        <h6 class="mt-3 text-white font-weight-normal">Follow Us</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Siguenos</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
                             <li><a href="#">Facebook</a></li>
@@ -264,14 +262,14 @@
                         </ul>
                     </div>
                     <div class="col-lg-2">
-                        <h6 class="mt-3 text-white font-weight-normal">Locations</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Ubicación</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
-                            <li><a href="#">Melbourne</a></li>
-                            <li><a href="#">London</a></li>
+                            <li><a href="#">Villa Mella Republica Dominicana</a></li>
+                           <!-- <li><a href="#">London</a></li>
                             <li><a href="#">New York</a></li>
                             <li><a href="#">San Francisco</a></li>
-                            <li><a href="#">Ontario</a></li>
+                            <li><a href="#">Ontario</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -280,7 +278,7 @@
                     <div class="col-lg-12">
                         <div class="clearfix">
                             <div class="float-left float_none">
-                                <p class="copy-rights mb-0">&copy; 2018 Craton - Crafted with <i class="mdi mdi-heart text-custom"></i> by ThemesBoss.</p>
+                                <p class="copy-rights mb-0">&copy; 2024 Cooperativa Unidos Podemos<i class="text-custom"></i></p>
                             </div>
                             <div class="float-right float_none">
                                 <ul class="list-inline fot_social mb-0">
