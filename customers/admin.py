@@ -46,6 +46,7 @@ def create_invoice(obj):
     textob.setTextOrigin(inch,inch)
     textob.setFont("Helvetica",14)
 
+
     lines =[
         "COOPERATIVA UNIDOS PODEMOS\nDirección: Calle Duarte #2 KM 18 Villa Mella Republica Dominicana\nRNC: 4-30-38208-6\nTelefono: 809-748-5652\n\n\nNo. Socio: {}\n\nNombre del Socio: {}\n\nLa suma de: {} pesos por concepto de ahorro mensual\n\nFecha recibo: {}\n\n\n\n\n\n\n\nEntregado Por:-------------------         Recibido Por:-------------------".format(obj.id,obj.id_customer,obj.amount_save_money,datetime.today().strftime('%m-%d-%Y'))
     

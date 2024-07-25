@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import django_heroku
+
 #import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -142,7 +143,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [ BASE_DIR / 'static']
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
 
