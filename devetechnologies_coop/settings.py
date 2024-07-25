@@ -89,13 +89,24 @@ WSGI_APPLICATION = 'devetechnologies_coop.wsgi.application'
     #}
 #}
 
-DATABASES = {
+'''DATABASES = {
         'default': {
                 'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
                 'NAME': 'db_coop',
                 'USER': 'root',
                 'PASSWORD': 'Evaluna01',
                 'HOST': '127.0.0.1',
+                'PORT': '3306',
+        }
+}'''
+#heroku settings DB
+DATABASES = {
+        'default': {
+                'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
+                'NAME': 'heroku_0c6fecfce4e3da8',
+                'USER': 'bd5ecc35945afc',
+                'PASSWORD': '517ef395',
+                'HOST': 'us-cluster-east-01.k8s.cleardb.net',
                 'PORT': '3306',
         }
 }
