@@ -1,0 +1,1 @@
+web gunicorn devetechnologies_coop.wsgi:application --log-file -
