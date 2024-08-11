@@ -15,7 +15,7 @@ class Customer(BaseModel):
     identification = models.BigIntegerField('Cedula', unique=True, blank=False, null=False)
     name_wife =models.CharField('Nombre Conyugue', max_length=25, blank=True, null=False)
     cell_number_wife = models.CharField('Celular Conyugue', max_length=11, blank=True, null=False)
-    email_wife = models.EmailField('Correo Electrónico Conyugue',max_length=100, unique=True, blank=True)
+    email_wife = models.EmailField('Correo Electrónico Conyugue',max_length=100,blank=True,null=True)
     name_children_1 = models.CharField('Nombre Hijo 1', max_length=50, blank=True, null=True)
     name_children_2 = models.CharField('Nombre Hijo 2', max_length=50, blank=True, null=True)
     name_children_3 = models.CharField('Nombre Hijo 3', max_length=50, blank=True, null=True)
