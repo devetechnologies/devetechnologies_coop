@@ -103,10 +103,10 @@ WSGI_APPLICATION = 'devetechnologies_coop.wsgi.application'
 DATABASES = {
         'default': {
                 'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
-                'NAME': 'heroku_0c6fecfce4e3da8',
-                'USER': 'bd5ecc35945afc',
-                'PASSWORD': '517ef395',
-                'HOST': 'us-cluster-east-01.k8s.cleardb.net',
+                'NAME': 'ldde0jn72gcles54',
+                'USER': 'e9bppt9mbn1b7rxq',
+                'PASSWORD': 'gw8gxbdxcpb5glyl',
+                'HOST': 'u3r5w4ayhxzdrw87.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
                 'PORT': '3306',
         }
 }
